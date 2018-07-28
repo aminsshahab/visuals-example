@@ -1,0 +1,25 @@
+{
+  "name": "visualization_wwwserver",
+  "version": "0.0.1",
+  "description": "A microservice for examining trading history visualization.",
+  "main": "server.js",
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "react-dom": "^16.3.2",
+    "request": "^2.86.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tradery/visualization.git"
+  },
+  "author": "Shahab Amin, Tradery Labs",
+  "license": "UNLICENSED"
+}

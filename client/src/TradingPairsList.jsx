@@ -1,18 +1,18 @@
-import 'react-select/dist/react-select.css';
-import 'react-virtualized-select/styles.css';
+import 'react-select/dist/react-select.css'
+import 'react-virtualized-select/styles.css'
 
 import React, { Component } from 'react';
-import Select from 'react-virtualized-select';
+import Select from "react-virtualized-select";
 
 class TradingPairsList extends Component {
-  constructor(props) {
+  constructor(props){
     super(props);
 
     this.handleNewSelected = this.handleNewSelected.bind(this);
   }
 
   handleNewSelected(e) {
-    if (e) {
+    if(e){
       this.props.setNewTradingPair(e.value);
     }
   }
@@ -20,14 +20,11 @@ class TradingPairsList extends Component {
   render() {
     return (
       <div>
-        <Select
-          value={this.props.value}
-          onChange={this.handleNewSelected}
-          options={this.props.tradingPairs}
-        />
+        <Select value={this.props.value} onChange={this.handleNewSelected} options={this.props.tradingPairs} />
       </div>
     );
   }
 }
 
-export default TradingPairsList;
+
+export default TradingPairsList
